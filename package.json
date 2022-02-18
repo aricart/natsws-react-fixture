@@ -1,10 +1,8 @@
 {
   "name": "npmscripts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test" : "npm run server; ./setup.sh",
+    "test": "killall nats-server; npm run server; ./setup.sh",
     "server": "nats-server -c ./nats.conf&",
     "clean": "rm -Rf ./natsws-plain ./natsws-react"
   },
@@ -14,5 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js",
+  "description": ""
 }
