@@ -1,8 +1,8 @@
 # natsws-react-fixture
 
-Simple set of scripts to build a react environment that uses nats.ws:
+Simple set of scripts to build a react environment that uses nats.ws.
 
-Requires a nats-server to be installed.
+Requires a nats-server to be installed and latest versions of react-create-app
 
 - `npm test`
 
