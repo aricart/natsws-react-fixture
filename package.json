@@ -2,9 +2,10 @@
   "name": "npmscripts",
   "version": "1.0.0",
   "scripts": {
-    "test": "killall nats-server; npm run server; ./setup.sh",
+    "test": "npm run stop; npm run server; ./setup.sh; cd ./natsws-react; npm run start",
     "server": "nats-server -c ./nats.conf&",
-    "clean": "rm -Rf ./natsws-plain ./natsws-react"
+    "clean": "rm -Rf ./natsws-react",
+    "stop": "killall nats-server;"
   },
   "repository": {
     "type": "git",
